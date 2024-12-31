@@ -1,0 +1,177 @@
+@media (max-width: 768px) {
+  #hambuger {
+    display: block;
+  }
+
+  .navmenu {
+    position: fixed;
+    top: 100px;
+    left: -100%;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background: var(--hover-color);
+    flex-direction: column;
+    align-items: first start;
+    z-index: 2;
+  }
+
+  .navmenu.active {
+    left: 0;
+  }
+
+  .nav-items {
+    width: 80%;
+    height: 40px;
+    background: var(--dark-bg-color);
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin: 10px auto;
+  }
+
+  .hire-me {
+    margin: auto;
+  }
+
+  .nav-links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-links::after {
+    display: none;
+  }
+
+  .nav-links:hover {
+    color: var(--hover-color);
+  }
+
+  header.sticky {
+    display: none;
+  }
+
+  .top-nav .sec-1,
+  .sec-2 {
+    font-size: 1rem;
+  }
+
+  .top-nav .sec-1 {
+    margin: auto !important;
+    font-size: 1.2rem;
+  }
+  .top-nav .sec-2 {
+    display: none;
+  }
+
+  /* Top Nav */
+
+  .hire-me {
+    background: var(--dark-bg-color);
+    color: var(--hover-color);
+    margin-right: auto;
+  }
+
+  .hire-me::before {
+    background: #fff;
+  }
+
+  .hire-me:hover {
+    color: var(--dark-bg-color);
+    box-shadow: none;
+  }
+
+  /* Hero Section */
+  .hero-sec {
+    row-gap: 15rem;
+  }
+
+  .shape {
+    margin-top: initial !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  /* Side Box */
+  aside {
+    display: none;
+  }
+
+  .hero-section {
+    width: 100% !important;
+  }
+
+  .hero-container .user {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  /* About */
+  .about-header {
+    width: 100% !important;
+    font-size: 2rem;
+    height: auto !important;
+  }
+
+  .article-cont i {
+    display: none;
+  }
+
+  .about-user {
+    font-size: 1.5rem;
+    padding: 10px !important;
+    overflow-y: scroll;
+    height: 300px;
+  }
+
+  /* Services */
+
+  .banner-1 {
+    width: auto;
+  }
+
+  .form {
+    text-align: center;
+  }
+
+  .form-cont {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .form-cont input {
+    width: 100%;
+  }
+
+  #submit-error {
+    bottom: -30% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 5px 15px;
+    height: 8vh;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .hero-sec {
+    margin-top: 13% !important;
+  }
+
+  .shape {
+    margin: 40px auto;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+  }
+
+  .user {
+    width: 500px;
+  }
+}
